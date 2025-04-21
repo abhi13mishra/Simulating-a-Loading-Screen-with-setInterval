@@ -1,0 +1,12 @@
+<script>
+    let count = 0; 
+let intId = setInterval(()=>{
+  count++
+  console.log("Loading...", count);
+  
+  if(count == 5){
+    clearInterval(intId);
+    console.log("Loaded Successfully");
+  }
+}, 1000);
+</script>
